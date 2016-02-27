@@ -1,0 +1,37 @@
+body {
+
+    background-color: #13142d;
+    width: 100%;
+    color: #13142d;
+}
+.container {
+    background-color: olive;
+    border: 2px solid #d0c4ab;
+    width: 60%;
+    margin-top: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+a:link {
+    color: #13142d;;
+    font-style: italic;
+}
+.title {
+    font-size: 36px;
+    font-style: italic;
+    color: #13142d;
+}
+.location {
+    font-size: 28px;
+}
+.weather {
+    font-size: 24px;
+}
+.icon {
+
+
+}
+.datatime {
+    font-size: 16px;
+}
