@@ -22,14 +22,36 @@ var displayDate = myDate.getFullYear() + '.' + myDate.getMonth()+ '.' + myDate.g
 
                 html += "<div class='icon text-center weather'><img src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png'>"
                 html += json.main.temp; + "</div>"
-                html += "<div class='weather'>" + json.weather[0].description + "</div>"
-                html += "<div class='datetime'>Get at: " + displayDate + "</div>"
+                html += "<div class='weather'>" + json.weather[0].description + "<br><br></div>"
+                html += "<div class='datetime'><p>Get at:  " + displayDate + "</p></div>"
             //});
 
         $(".message").html(html);
 
         });
     });
+
+//google map api with openWeather map layer
+/*
+   var geoJSON;
+   var request;
+   var gettingData = false;
++  var openWeatherMapKey = "ABC..."
+
+   function initialize() {
+     var mapOptions = {
+ @@ -84,7 +85,7 @@
+                         + eastLng + "," + southLat + "," //right bottom
+                         + map.getZoom()
+                         + "&cluster=yes&format=json"
+-                        + "&APPID=" + YOUR_OPENWEATHERMAP_KEY;
++                        + "&APPID=" + openWeatherMapKey;
+     request = new XMLHttpRequest();
+     request.onload = proccessResults;
+     request.open("get", requestString, true);
+
+*/
+
 
 
 

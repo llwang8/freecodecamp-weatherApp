@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
@@ -18,29 +19,65 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Google Maps API weather data layer -->
+  <!--
+  <script type="text/javascript" src="https://maps.goolgeapis.com/maps/api/js?client=c3a2b88d0195ab9136f72c2270320a91">
+  -->
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jQuery.js"></script>
 
 </head>
 <body>
-  <div class="container">
-    <div class="row header">Free Code Camp</div>
-    <div class="row text-left">
-      <p class="title">Weather In Your City</p>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Free Code Camp</a>
     </div>
-    <div class="row text-center">
-      <p class="location">Princeton, NJ US
-      <input type="button" text="Change Location"></p>
-      <div class="message">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active title">Weather In Your City</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <button class="bt bt-primary bt-change ">Change Location</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-6 text-left">
+      <div class="location">Princeton, NJ
 
       </div>
+      <div class="message">
+      </div>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
     </div>
-
-    <div class="row text-center"><h5>Compiled by <a href="#" alt="#">llwang</a>
+    <div class="col-sm-6 ">
+      <div class="well">
+        <p>(Google Map API)</p>
+        <div id="map-canvas"></div>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
     </div>
+  </div>
 </div>
+
+<footer class="text-center">Compiled by <a href="#" alt="#">llwang</a>
+</footer>
 
 </body>
 </html>
