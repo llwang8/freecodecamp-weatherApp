@@ -1,47 +1,72 @@
 body {
 
-    background-color: #13142d;
+    background-color: #ffffff;
     width: 100%;
-    color: #d0c4ab;
+    color: #13142d;
     font-family: 'Lato', sans-serif;
 }
 .container {
 
     border: 1px solid #d0c4ab;
     max-width: 100%;
-    margin-top: 88px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px;
+    padding: 10px;
 }
 a:link {
-    color: #d0c4ab;
+    color: #ffa31a;
     font-style: italic;
 }
+.logo {
+    font-size: 28px;
+}
 .header {
-    display: inline-block;
-    background-color: ;
+    background-color: #13142d;
 }
 .title {
     font-size: 36px;
     font-style: italic;
-    color: #d0c4ab;
+    color: #ffa31a;
 }
 .location {
     font-size: 28px;
 }
 .weather {
     font-size: 28px;
+    display: inline-block;
+}
+.btn-success:active:focus {
+  color: #ffffff;
+  background-color: #161617;
+  border-color: #494F57;
 }
 .bt-change {
-    background-color: #d0c4ab;
+    background-color: #d5d5d5;
     font-size: 16px;
     color: #13142d;
-    border: 2px solid #d3c4ab;
+    border: 2px solid #d5d5d5;
     margin-top: 10px;
 }
 .bt-change:hover {
     background-color: #e7e7e7;
+}
+.btn-change:active:focus {
+  border-color: #e7e7e7;
+}
+.bt-temp {
+    background-color: #e7e7e7;
+    font-size: 16px;
+    color: #13142d;
+    border: 2px solid #d5d5d5;
+    margin-top: 10px;
+}
+.bt-temp:hover {
+    background-color: #d5d5d5;
+}
+.btn-temp:active:focus {
+  border-color: #d5d5d5;
 }
 .icon {
 
@@ -60,6 +85,7 @@ a:link {
 table {
     border-collapse: collapse;
     width: 100%;
+    border: 1px solid grey;
 }
 
 th, td {
@@ -90,8 +116,8 @@ tr:nth-child(even){
 
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
-      color: white;
+      background-color: #13142d;
+      color: #ffa31a;
       padding: 15px;
     }
 
