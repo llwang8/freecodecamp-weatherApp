@@ -44,38 +44,16 @@ $(document).ready(function(){
 });
 
 function toggleTemp() {
-    var f = document.getElementById("f");
-    var c = document.getElementByID("c");
 
-    f.style.display = (f.style.display === "block" ? "none" : "block");
-    c.style.display = (c.style.display === "block" ? "none" : "block");
-
+    $("#changeTempF").click(function() {
+          $("#f").hide();
+          $("#c").show();
+    });
+    $("#changeTempC").click(function() {
+          $("#f").show();
+          $("#c").hide();
+    });
 }
-
-/*
-
-
-     document.getElementById("f").display = "none";
-        document.getElementByID("c").display = "block";
-    });
-    $("#changeTempC").click(function(){
-        document.getElementById("f").display = "block";
-        document.getElementByID("c").display = "none";
-    });
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#changeTempF").click(function() {
-        $("#f").hide();
-        $("#c").show();
-    });
-    $("#changeTempC").click(function(){
-        $("#f").show();
-        $("#c").hide();
-    });
-});
-*/
 
 //google map api with openWeather map layer
 /*
