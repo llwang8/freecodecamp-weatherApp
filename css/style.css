@@ -130,3 +130,10 @@ tr:nth-child(even){
       .row.content {height:auto;}
     }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
