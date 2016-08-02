@@ -1,3 +1,20 @@
+/* freeCodeCamp - Weather APP
+
+/************************************
+
+ *   Front-end News! Stylesheet
+
+ *  dark blue       : #13142d;
+ *  gold            : #ffa31a;
+ *  grey            : #dcdcdc;
+ *  light grey      : #f2f2f2;
+
+
+/*------------------------------------
+ *  Base
+------------------------------------*/
+
+
 body {
 
     background-color: #ffffff;
@@ -5,38 +22,17 @@ body {
     color: #13142d;
     font-family: 'Lato', sans-serif;
 }
-.container {
 
-    border: 1px solid #d0c4ab;
-    max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-a:link {
+a:link,
+a:visited {
     color: #ffa31a;
     font-style: italic;
 }
-.logo {
-    font-size: 28px;
+a:hover,
+a:active {
+  color: #dcdcdc;
 }
-.header {
-    background-color: #13142d;
-}
-.title {
-    font-size: 36px;
-    font-style: italic;
-    color: #ffa31a;
-}
-.location {
-    font-size: 28px;
-}
-.weather {
-    font-size: 28px;
-    display: inline-block;
-}
+
 .btn-success:active:focus {
   color: #ffffff;
   background-color: #161617;
@@ -55,6 +51,62 @@ a:link {
 .btn-change:active:focus {
   border-color: #e7e7e7;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*------------------------------------
+ *  container
+------------------------------------*/
+
+.container {
+
+    border: 1px solid #d0c4ab;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/*------------------------------------
+ *  navbar
+------------------------------------*/
+ /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+/*------------------------------------
+ *  header
+------------------------------------*/
+.logo {
+    font-size: 28px;
+}
+.header {
+    background-color: #13142d;
+}
+.title {
+    font-size: 36px;
+    font-style: italic;
+    color: #ffa31a;
+}
+
+
+
+/*------------------------------------
+ *  weather display
+------------------------------------*/
+.row.content {
+  height: 450px;
+}
+
 .bt-temp {
     background-color: #e7e7e7;
     font-size: 16px;
@@ -68,20 +120,24 @@ a:link {
 .btn-temp:active:focus {
   border-color: #d5d5d5;
 }
-.icon {
 
-
+.location {
+    font-size: 28px;
 }
+
+.weather {
+    font-size: 28px;
+    display: inline-block;
+}
+
+
 .datetime {
     font-size: 16px;
 }
-#map-canvas {
-      width: 100%;
-      height: 100%;
-}
-.gm-style-iw {
-      text-align: center;
-}
+
+/*------------------------------------
+ *  table
+------------------------------------*/
 table {
     border-collapse: collapse;
     width: 100%;
@@ -97,43 +153,43 @@ tr:nth-child(even){
     background-color: #f2f2f2
 }
 
+/*------------------------------------
+ *  map
+------------------------------------*/
+.map {
+  background: #f2f2f2;
+  width: 620px;
+  height: 450px;
+}
 
- /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
+#map-canvas {
+      width: 100%;
       height: 100%;
-    }
+}
 
-    /* Set black background color, white text and some padding */
+
+/*------------------------------------
+ *  footer
+------------------------------------*/
+ /* Set black background color, white text and some padding */
     footer {
       background-color: #13142d;
       color: #ffa31a;
       padding: 15px;
     }
 
+
+/*------------------------------------
+ *  @media
+------------------------------------*/
+
+
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
+
       .row.content {height:auto;}
     }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
+
+
 
