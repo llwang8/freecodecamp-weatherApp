@@ -1,4 +1,4 @@
-## FreeCodeCamp: Build a Local Weather Viewer
+# FreeCodeCamp: Build a Local Weather Viewer
 
 I built a Local Weather Viewer with JavaScript, jQuery, HTML and CSS, and Open Weather API, while following some best practices for structuring HTML, writing efficient CSS, and commenting code along the way.
 
@@ -6,7 +6,7 @@ I built a Local Weather Viewer with JavaScript, jQuery, HTML and CSS, and Open W
 
 #Built with:
 
-Implemented with JavaScript, jQuery, HTML and CSS. Also used Open Weather API, digital color meter.
+Implemented with JavaScript, jQuery, HTML and CSS. Also used Open Weather API, digital color meter, google map api.
 
 # Link
 

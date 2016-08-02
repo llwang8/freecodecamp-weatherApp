@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Weather layer</title>
-   <!-- Latest compiled and minified CSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather App</title>
+
+  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -15,10 +18,10 @@
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <!-- Google Maps API weather data layer -->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js">
-</script>
 
-<script>
+  <script>
   var map;
   var geoJSON;
   var request;
@@ -150,26 +153,29 @@
   };
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
 </head>
+
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid header">
-      <div class="navbar-header">
-        <!--<a class="navbar-brand" href="freecoadecamp.com" alt="Free Code Camp"><img src="https://goo.gl/oQrQYo" width="35" height="35"></a>-->
-        <a class="navbar-brand logo" href="freecoadecamp.com" alt="Free Code Camp">&#9816;</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active title">Weather In Your City</li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <button class="bt bt-primary bt-change ">Change Location</button>
-          </li>
-        </ul>
-      </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid header">
+    <div class="navbar-header">
+      <!--<a class="navbar-brand" href="freecoadecamp.com" alt="Free Code Camp"><img src="https://goo.gl/oQrQYo" width="35" height="35"></a>-->
+      <a class="navbar-brand logo" href="freecoadecamp.com" alt="Free Code Camp">&#9816;</a>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active title">Weather In Your City</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <button class="bt bt-primary bt-change ">Change Location</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container-fluid container">
   <div class="row content">
@@ -191,8 +197,7 @@
   </div>
 </div>
 
-<footer class="text-center">
-  Compiled by <a href="http://codepen.io/llwang8/" alt="My Code Pen">llwang</a>
+<footer class="text-center">Compiled by <a href="http://codepen.io/llwang8/" alt="My Code Pen">llwang</a>
 </footer>
 
 <script src="js/jQuery.js"></script>

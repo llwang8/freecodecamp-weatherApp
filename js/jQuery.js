@@ -57,25 +57,5 @@ function toggleTemp() {
     });
 }
 
-//google map api with openWeather map layer
-/*
-   var geoJSON;
-   var request;
-   var gettingData = false;
-+  var openWeatherMapKey = "ABC..."
 
-   function initialize() {
-     var mapOptions = {
- @@ -84,7 +85,7 @@
-                         + eastLng + "," + southLat + "," //right bottom
-                         + map.getZoom()
-                         + "&cluster=yes&format=json"
--                        + "&APPID=" + YOUR_OPENWEATHERMAP_KEY;
-+                        + "&APPID=" + openWeatherMapKey;
-     request = new XMLHttpRequest();
-     request.onload = proccessResults;
-     request.open("get", requestString, true);
 
-*/
-
-//http://api.openweathermap.org/data/2.5/weather?zip=08540,us&appid=c3a2b88d0195ab9136f72c2270320a91

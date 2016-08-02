@@ -1,33 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Weather layer</title>
-   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
 
-  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js">
-</script>
-
-<script>
   var map;
   var geoJSON;
   var request;
   var gettingData = false;
-  var openWeatherMapKey = "c3a2b88d0195ab9136f72c2270320a91"
+  var openWeatherMapKey = "ABC..."
   function initialize() {
     var mapOptions = {
       zoom: 4,
-      center: new google.maps.LatLng(40,-74)
+      center: new google.maps.LatLng(50,-50)
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -149,53 +129,6 @@
     });
   };
   google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-</head>
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid header">
-      <div class="navbar-header">
-        <!--<a class="navbar-brand" href="freecoadecamp.com" alt="Free Code Camp"><img src="https://goo.gl/oQrQYo" width="35" height="35"></a>-->
-        <a class="navbar-brand logo" href="freecoadecamp.com" alt="Free Code Camp">&#9816;</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active title">Weather In Your City</li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <button class="bt bt-primary bt-change ">Change Location</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-<div class="container-fluid container">
-  <div class="row content">
-    <div class="col-sm-4 text-left">
-      <div class="location">Princeton, NJ</div>
-      <hr>
-      <div class="message">
-      </div>
-      <hr>
-      <div class="table"></div>
-      <p>Thanks for visiting...</p>
-    </div>
-    <div class="col-sm-8 map">
-      <div class="map">
-        <div id="map-canvas"></div>
-      </div>
 
-    </div>
-  </div>
-</div>
 
-<footer class="text-center">
-  Compiled by <a href="http://codepen.io/llwang8/" alt="My Code Pen">llwang</a>
-</footer>
-
-<script src="js/jQuery.js"></script>
-
-</body>
-</html>
